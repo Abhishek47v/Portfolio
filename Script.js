@@ -160,7 +160,7 @@ const dropDownAnimation = `
       const link = document.createElement('a');
       link.href = pdfPath;
       link.target = '_blank';
-      link.download = 'resume.pdf';
+      link.download = 'Resume.pdf';
       document.body.appendChild(link);
       link.click();
   
