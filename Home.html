@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abhishek Verma - Portfolio</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.1/gsap.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1 class="header-title">PORTFOLIO</h1>
+      <nav>
+        <ul>
+          <li><a href="#home" class="nav-link-container">Home</a></li>
+          <li><a href="#about" id="about-link" class="nav-link-container">About</a></li>
+          <li><a href="#skills" id="skills-link" class="nav-link-container">Skills</a></li>
+          <li><a href="#experience" class="nav-link-container">Experience</a></li>
+          <li><a href="#projects" class="nav-link-container">Projects</a></li>
+          <li><a href="#contact" class="nav-link-container">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <section id="home" class="intro">
+      <div class="intro-text">
+        <h1>Hi! I'm Abhishek Verma</h1>
+        <h2 class="animated-text"><span class="white-text">And I know </span> Full Stack Development<span class="cursor"></span></h2>
+        
+        <div class="button-container">
+          <button class="glowing-button" id="downloadButton">
+            Download Resume
+            <span class="glow-shape"></span>
+          </button>
+        </div>
+
+        <div class="social-buttons">
+          <div class="social-button">
+            <a href="https://www.linkedin.com/in/abhishek-v612/" target="_blank"><i class="fa fa-linkedin"></i></a>
+          </div>
+          <div class="social-button github-button">
+            <a href="https://github.com/Abhishek47v" target="_blank"><i class="fa fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="image-container"></div>
+      <canvas id="particle-canvas" style="position: absolute; top: 0; left: 0;"></canvas>
+    </section>       
+
+    <section id="about" class="section">
+      <h2 class="section-heading animated-text">About Me</h2>
+      <p class="about-paragraph">My journey started with mastering C programming, SQL, Java, and essential data structures, which now equip me to confidently address complex challenges.As I progressed academically, I eagerly explored diverse technological fields. Swiftly adopting web development languages, I excelled at crafting dynamic, user-friendly web apps using modern tools like React.js. This allowed me to bring my creative ideas to life, providing smooth user experiences.</p>
+        <div class="hidden-paragraphs">
+          <p class="about-paragraph">In parallel, I ventured into the intriguing realm of AI algorithms, expertly navigating intricate neural networks and machine learning. This experience offers me a distinct perspective on utilizing data for intelligent, forward-looking solutions.</p>
+        
+        <p class="about-paragraph">Continuing my journey, I extensively delved into full-stack development, culminating in a rewarding internship as a Full Stack Developer. Beyond enhancing my technical skills, this role refined my teamwork abilities, guiding me toward integrated solutions that harmonize backend strength with frontend finesse.</p>
+        
+        <p class="about-paragraph">Now prepared to leverage my versatile skills and accumulated wisdom, I'm steadfast in my pursuit of a compelling Software Development career. I'm committed to applying my expertise to tangible challenges and infusing innovation into my elegant, efficient code.</p>
+        
+        <p class="about-paragraph">Actively seeking opportunities that align with my goals, I eagerly anticipate collaborating with experienced professionals on groundbreaking projects. Whether through internships, part-time roles, or voluntary engagements, I'm devoted to infusing every endeavor with my energy, skills, and unwavering enthusiasm. Let's shape technology's future together.</p>
+        </div>
+        <div class="button-container">
+          <button class="show-more-button">More about me</button>
+          <button class="show-less-button">See Less</button>
+        </div>
+    </section>    
+    
+    <section id="skills" class="section">
+      <h2 class="section-heading animated-text">Skills</h2>
+      <div class='donut-slider'>
+        <div class="'donut-set" id="donut-set-1">
+          <div class="donut-wrapper">
+          <div class="donut-container" id="donut-container-1">
+            <svg width="150" height="150" viewBox="0 0 30 30" class="donut">
+              <defs>
+                <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" stop-color="#8A2BE2" /> <!-- Dark purple -->
+                  <stop offset="100%" stop-color="#4169E1" /> <!-- Blue -->
+                </linearGradient>
+                <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+                  <feDropShadow dx="0" dy="0" stdDeviation="0.6" flood-color="#4169E1" />
+                </filter>
+              </defs>
+              <circle class="donut-segment" cx="15" cy="15" r="13.8" fill="transparent" stroke="url(#gradient)" stroke-width="2.5"
+                      stroke-dasharray="0 100" stroke-dashoffset="0" style="transition: stroke-dasharray 0.8s ease; stroke-linecap: round; filter: url(#shadow);"></circle>
+              <text class="donut-text" x="50%" y="50%" dy=".3em" text-anchor="middle" font-size="10">0%</text>
+            </svg>
+            <p class="another-class-for-text">Web Development</p>
+          </div>
+          <div class="donut-container" id="donut-container-2">
+            <svg width="150" height="150" viewBox="0 0 30 30" class="donut">
+              <defs>
+                <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" stop-color="#8A2BE2" /> <!-- Dark purple -->
+                  <stop offset="100%" stop-color="#4169E1" /> <!-- Blue -->
+                </linearGradient>
+                <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+                  <feDropShadow dx="0" dy="0" stdDeviation="0.6" flood-color="#4169E1" />
+                </filter>
+              </defs>
+              <circle class="donut-segment" cx="15" cy="15" r="13.8" fill="transparent" stroke="url(#gradient)" stroke-width="2.5"
+                      stroke-dasharray="0 100" stroke-dashoffset="0" style="transition: stroke-dasharray 0.8s ease; stroke-linecap: round; filter: url(#shadow);"></circle>
+              <text class="donut-text" x="50%" y="50%" dy=".3em" text-anchor="middle" font-size="10">0%</text>
+            </svg>
+            <p class="another-class-for-text">DSA</p>
+          </div>
+          <div class="donut-container" id="donut-container-3">
+            <svg width="150" height="150" viewBox="0 0 30 30" class="donut">
+              <defs>
+                <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" stop-color="#8A2BE2" /> <!-- Dark purple -->
+                  <stop offset="100%" stop-color="#4169E1" /> <!-- Blue -->
+                </linearGradient>
+                <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+                  <feDropShadow dx="0" dy="0" stdDeviation="0.6" flood-color="#4169E1" />
+                </filter>
+              </defs>
+              <circle class="donut-segment" cx="15" cy="15" r="13.8" fill="transparent" stroke="url(#gradient)" stroke-width="2.5"
+                      stroke-dasharray="0 100" stroke-dashoffset="0" style="transition: stroke-dasharray 0.8s ease; stroke-linecap: round; filter: url(#shadow);"></circle>
+              <text class="donut-text" x="50%" y="50%" dy=".3em" text-anchor="middle" font-size="10">0%</text>
+            </svg>
+            <p class="another-class-for-text">SQL</p>
+          </div>
+          </div>
+          <div class="donut-set" id="donut-set-2">
+            <div class="donut-wrapper">
+            <div class="donut-container" id="donut-container-4">
+            <svg width="150" height="150" viewBox="0 0 30 30" class="donut">
+              <defs>
+                <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" stop-color="#8A2BE2" /> <!-- Dark purple -->
+                  <stop offset="100%" stop-color="#4169E1" /> <!-- Blue -->
+                </linearGradient>
+                <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+                  <feDropShadow dx="0" dy="0" stdDeviation="0.6" flood-color="#4169E1" />
+                </filter>
+              </defs>
+              <circle class="donut-segment" cx="15" cy="15" r="13.8" fill="transparent" stroke="url(#gradient)" stroke-width="2.5"
+                      stroke-dasharray="0 100" stroke-dashoffset="0" style="transition: stroke-dasharray 0.8s ease; stroke-linecap: round; filter: url(#shadow);"></circle>
+              <text class="donut-text" x="50%" y="50%" dy=".3em" text-anchor="middle" font-size="10">0%</text>
+            </svg>
+            <p class="another-class-for-text">Java</p>
+          </div>
+          <div class="donut-container" id="donut-container-5">
+            <svg width="150" height="150" viewBox="0 0 30 30" class="donut">
+              <defs>
+                <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" stop-color="#8A2BE2" /> <!-- Dark purple -->
+                  <stop offset="100%" stop-color="#4169E1" /> <!-- Blue -->
+                </linearGradient>
+                <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+                  <feDropShadow dx="0" dy="0" stdDeviation="0.6" flood-color="#4169E1" />
+                </filter>
+              </defs>
+              <circle class="donut-segment" cx="15" cy="15" r="13.8" fill="transparent" stroke="url(#gradient)" stroke-width="2.5"
+                      stroke-dasharray="0 100" stroke-dashoffset="0" style="transition: stroke-dasharray 0.8s ease; stroke-linecap: round; filter: url(#shadow);"></circle>
+              <text class="donut-text" x="50%" y="50%" dy=".3em" text-anchor="middle" font-size="10">0%</text>
+            </svg>
+            <p class="another-class-for-text">Python</p>
+          </div>
+          <div class="donut-container" id="donut-container-6">
+            <svg width="150" height="150" viewBox="0 0 30 30" class="donut">
+              <defs>
+                <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" stop-color="#8A2BE2" /> <!-- Dark purple -->
+                  <stop offset="100%" stop-color="#4169E1" /> <!-- Blue -->
+                </linearGradient>
+                <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+                  <feDropShadow dx="0" dy="0" stdDeviation="0.6" flood-color="#4169E1" />
+                </filter>
+              </defs>
+              <circle class="donut-segment" cx="15" cy="15" r="13.8" fill="transparent" stroke="url(#gradient)" stroke-width="2.5"
+                      stroke-dasharray="0 100" stroke-dashoffset="0" style="transition: stroke-dasharray 0.8s ease; stroke-linecap: round; filter: url(#shadow);"></circle>
+              <text class="donut-text" x="50%" y="50%" dy=".3em" text-anchor="middle" font-size="10">0%</text>
+            </svg>
+            <p class="another-class-for-text">C/C++</p>
+          </div>
+          </div>
+          <div class="donut-set" id="donut-set-2">
+            <div class="donut-wrapper">
+            <div class="donut-container" id="donut-container-7">
+            <svg width="150" height="150" viewBox="0 0 30 30" class="donut">
+              <defs>
+                <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" stop-color="#8A2BE2" /> <!-- Dark purple -->
+                  <stop offset="100%" stop-color="#4169E1" /> <!-- Blue -->
+                </linearGradient>
+                <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+                  <feDropShadow dx="0" dy="0" stdDeviation="0.6" flood-color="#4169E1" />
+                </filter>
+              </defs>
+              <circle class="donut-segment" cx="15" cy="15" r="13.8" fill="transparent" stroke="url(#gradient)" stroke-width="2.5"
+                      stroke-dasharray="0 100" stroke-dashoffset="0" style="transition: stroke-dasharray 0.8s ease; stroke-linecap: round; filter: url(#shadow);"></circle>
+              <text class="donut-text" x="50%" y="50%" dy=".3em" text-anchor="middle" font-size="10">0%</text>
+            </svg>
+            <p class="another-class-for-text">Git/GitHub</p>
+          </div>
+          <div class="donut-container" id="donut-container-8">
+            <svg width="150" height="150" viewBox="0 0 30 30" class="donut">
+              <defs>
+                <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" stop-color="#8A2BE2" /> <!-- Dark purple -->
+                  <stop offset="100%" stop-color="#4169E1" /> <!-- Blue -->
+                </linearGradient>
+                <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+                  <feDropShadow dx="0" dy="0" stdDeviation="0.6" flood-color="#4169E1" />
+                </filter>
+              </defs>
+              <circle class="donut-segment" cx="15" cy="15" r="13.8" fill="transparent" stroke="url(#gradient)" stroke-width="2.5"
+                      stroke-dasharray="0 100" stroke-dashoffset="0" style="transition: stroke-dasharray 0.8s ease; stroke-linecap: round; filter: url(#shadow);"></circle>
+              <text class="donut-text" x="50%" y="50%" dy=".3em" text-anchor="middle" font-size="10">0%</text>
+            </svg>
+            <p class="another-class-for-text">HTML & CSS</p>
+          </div>
+          <div class="donut-container" id="donut-container-9">
+            <svg width="150" height="150" viewBox="0 0 30 30" class="donut">
+              <defs>
+                <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" stop-color="#8A2BE2" /> <!-- Dark purple -->
+                  <stop offset="100%" stop-color="#4169E1" /> <!-- Blue -->
+                </linearGradient>
+                <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+                  <feDropShadow dx="0" dy="0" stdDeviation="0.6" flood-color="#4169E1" />
+                </filter>
+              </defs>
+              <circle class="donut-segment" cx="15" cy="15" r="13.8" fill="transparent" stroke="url(#gradient)" stroke-width="2.5"
+                      stroke-dasharray="0 100" stroke-dashoffset="0" style="transition: stroke-dasharray 0.8s ease; stroke-linecap: round; filter: url(#shadow);"></circle>
+              <text class="donut-text" x="50%" y="50%" dy=".3em" text-anchor="middle" font-size="10">0%</text>
+            </svg>
+            <p class="another-class-for-text">JavaScript</p>
+          </div>
+          </div>
+      </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <h2 class="section-heading animated-text">Experience & Education</h2>
+        </div>
+        <section class="timeline  timeline-star timeline-infinite">
+          <div class="timeline__progressbar"></div>
+          <ul>
+            <li>
+              <div>
+                <h2>Class X CBSE Boards</h2> <p>B.I.S. - May 2019</p>
+                <div class="image-wrapper">
+                  <p>I achieved 90.2% in my 10th grade, mastering subjects from Mathematics and Science to Social Studies and Languages.</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h2>Class XII CBSE Boards</h2> <p>B.I.S. - June 2021</p>
+                <div class="image-wrapper">
+                  <p>I studied PCM (Physics, Chemistry, and Mathematics) during my 12th grade and secured a solid 90% in the CBSE Board exams.</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h2>Full Stack Developer Intern</h2> <p>Capabl - July 2023</p>
+                <div class="image-wrapper">
+                  <p>Working at Capabl provided me with an invaluable opportunity to enhance my skills and gain hands-on experience in developing robust and scalable web applications. </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div>
+                <div class="image-wrapper">
+                  <p>To be Continued...</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <h2 class="section-heading animated-text">Projects</h2>
+    </section>
+    <section id="project">
+      <div class="project-container">
+        <img src="abxc.jpg" alt="Image">
+        <h1>Project 1</h1>
+        <p>Uploading Soon.</p>
+      </div>
+      <div class="project-container">
+        <img src="abxc.jpg" alt="Image">
+        <h1>Project 2</h1>
+        <p>Uploading Soon.</p>
+      </div>
+      <div class="project-container">
+        <img src="abxc.jpg" alt="Image">
+        <h1>Project 3</h1>
+        <p>Uploading Soon.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2 class="section-heading animated-text">Contact Me</h2>
+      <div class="container">
+        <div class="contact-form">
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <label for="contact-number">Contact Number:</label>
+              <input type="number" id="contact-number" name="contact-number" placeholder="Your Contact Number" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" placeholder="Your Email" required>
+            </div>
+            <button type="button" id="reset-button">Reset</button>
+            <button class="glowing-button" type="submit" value="button" onclick="Send()">Submit</button>
+            <div id="submitted-popup" class="popup">
+              <div class="popup-content">
+                <span class="close-button">&times;</span> <!-- Cross button -->
+                <h2>Form Submitted</h2>
+                <p>Your form has been successfully submitted. Thank you!</p>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="loading-container">
+    <div class="loading-animation"></div>
+    <p class="loading-text">Loading...</p>
+  </div> 
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script>
+    function Send(){
+      var name = document.getElementById("name").value;
+      var email = document.getElementById("email").value;
+      var contact = document.getElementById("contact-number").value;
+
+      var body = "Name: " + name + "<br/> Email: " + email + "<br/> Contact Number: " + contact;
+       
+      console.log(body);
+       Email.send({
+           SecureToken : "107ac399-3909-4674-acf3-403be5c7807d",
+           To : 'abhishek98765432101@gmail.com',
+           From : "abhishek98765432101@gmail.com",
+           Subject : "Portfolio Contact Form Submission",
+           Body : body
+           }).then(
+               message =>{}
+           );             
+    }
+  </script>
+  <script src="Script.js"></script>
+</body>
+</html>
