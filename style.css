@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   background-image: url('b.jpeg');
-  background-size:cover;
+  background-size:100%;
   background-color: #111111;
   color: #ffffff;
 }
